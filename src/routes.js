@@ -39,13 +39,13 @@ export const routes = [
 
             try {
 
-                console.log(req.body)
                 const data = TaskService.create(req.body);
 
                 return res.writeHead(201).end(JSON.stringify(data));
 
             } catch (err) {
-                console.log(String(err))
+               
+                
                 return res.writeHead(400).end(JSON.stringify({
                     status: 'Bad request',
                     message: String(err)
