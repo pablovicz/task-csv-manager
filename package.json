@@ -1,0 +1,14 @@
+{
+  "name": "task-csv-manager",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Simple node example of a application with a CRUD of tasks and massive import using csv file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
