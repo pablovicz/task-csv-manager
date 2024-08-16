@@ -20,8 +20,6 @@ class Service {
             }
         })
 
-        console.log('aqui')
-
         const task = new Task(body.title, body.description);
 
         database.insert(this.#table, task.toObj())
@@ -53,7 +51,7 @@ class Service {
             return this.getById(id, true)
 
         } catch(err) {
-            console.log(err)
+         
             throw new Error(`There is no task with id "${id}"`);
         }
     }
